@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Trip Details (Uber Trip Details)' inline='true' name='federated.0z552x70jfj7dn127ziow0rn6zen' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Uber Trip Details' name='excel-direct.1bdpjxy0j2f7k71765x4v1r4yiug'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/pooja/Downloads/Uber Trip Details.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1bdpjxy0j2f7k71765x4v1r4yiug' name='Trip Details' table='[&apos;Trip Details$&apos;]' type='table'>
+          <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Trip ID' ordinal='0' />
+            <column datatype='datetime' name='Pickup Time' ordinal='1' />
+            <column datatype='datetime' name='Drop Off Time' ordinal='2' />
+            <column datatype='integer' name='passenger_count' ordinal='3' />
+            <column datatype='real' name='trip_distance' ordinal='4' />
+            <column datatype='integer' name='PULocationID' ordinal='5' />
+            <column datatype='integer' name='DOLocationID' ordinal='6' />
+            <column datatype='real' name='fare_amount' ordinal='7' />
+            <column datatype='real' name='Surge Fee' ordinal='8' />
+            <column datatype='string' name='Vehicle' ordinal='9' />
+            <column datatype='string' name='Payment_type' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K10001:no:A1:K10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip ID]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Trip ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pickup Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pickup Time]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Pickup Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drop Off Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Drop Off Time]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Drop Off Time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passenger_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[passenger_count]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>passenger_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_distance]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>trip_distance</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PULocationID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PULocationID]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>PULocationID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOLocationID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOLocationID]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>DOLocationID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare_amount]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>fare_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surge Fee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Surge Fee]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Surge Fee</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Vehicle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_type]</local-name>
+            <parent-name>[Trip Details]</parent-name>
+            <remote-alias>Payment_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DO Location ID' datatype='integer' name='[DOLocationID]' role='dimension' type='ordinal' />
+      <column caption='PU Location ID' datatype='integer' name='[PULocationID]' role='dimension' type='ordinal' />
+      <column caption='Payment type' datatype='string' name='[Payment_type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Trip ID]' role='dimension' type='ordinal' />
+      <column caption='Trip Details' datatype='table' name='[__tableau_internal_object_id__].[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]' role='measure' type='quantitative' />
+      <column caption='Fare Amount' datatype='real' name='[fare_amount]' role='measure' type='quantitative' />
+      <column caption='Passenger Count' datatype='integer' name='[passenger_count]' role='measure' type='quantitative' />
+      <column caption='Trip Distance' datatype='real' name='[trip_distance]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/pooja/AppData/Local/Temp/TableauTemp/#TableauTemp_15idi7h0ot2asc15k5biw131k0tq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/05/2025 03:46:30 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Trip ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Trip ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trip ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Trip Details</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103728</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pickup Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Pickup Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pickup Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Trip Details</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>103728</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drop Off Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Drop Off Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drop Off Time</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Trip Details</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>103728</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passenger_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[passenger_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>passenger_count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Trip Details</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_distance</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Trip Details</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2347</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PULocationID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PULocationID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PULocationID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Trip Details</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOLocationID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DOLocationID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOLocationID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Trip Details</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>496</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fare_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fare_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fare_amount</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Trip Details</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>254</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Surge Fee</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Surge Fee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Surge Fee</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Trip Details</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1054</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Trip Details</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Payment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Payment_type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Trip Details</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Trip Details' id='Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4'>
+            <properties context=''>
+              <relation connection='excel-direct.1bdpjxy0j2f7k71765x4v1r4yiug' name='Trip Details' table='[&apos;Trip Details$&apos;]' type='table'>
+                <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Trip ID' ordinal='0' />
+                  <column datatype='datetime' name='Pickup Time' ordinal='1' />
+                  <column datatype='datetime' name='Drop Off Time' ordinal='2' />
+                  <column datatype='integer' name='passenger_count' ordinal='3' />
+                  <column datatype='real' name='trip_distance' ordinal='4' />
+                  <column datatype='integer' name='PULocationID' ordinal='5' />
+                  <column datatype='integer' name='DOLocationID' ordinal='6' />
+                  <column datatype='real' name='fare_amount' ordinal='7' />
+                  <column datatype='real' name='Surge Fee' ordinal='8' />
+                  <column datatype='string' name='Vehicle' ordinal='9' />
+                  <column datatype='string' name='Payment_type' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trip Details (Uber Trip Details)' name='federated.0z552x70jfj7dn127ziow0rn6zen' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z552x70jfj7dn127ziow0rn6zen'>
+            <column caption='Trip Details' datatype='table' name='[__tableau_internal_object_id__].[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trip_distance]' derivation='Sum' name='[sum:trip_distance:qk]' pivot='key' type='quantitative' />
+            <column caption='Trip Distance' datatype='real' name='[trip_distance]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z552x70jfj7dn127ziow0rn6zen].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z552x70jfj7dn127ziow0rn6zen].[__tableau_internal_object_id__].[cnt:Trip Details_3B6F1B2AC81F47EF9D2116717F20ACB4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0z552x70jfj7dn127ziow0rn6zen].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0z552x70jfj7dn127ziow0rn6zen].[:Measure Names]</rows>
+        <cols>[federated.0z552x70jfj7dn127ziow0rn6zen].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{0CE88BB2-DA41-49BE-ABDC-7B4E4438C9A6}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trip Details (Uber Trip Details)' name='federated.0z552x70jfj7dn127ziow0rn6zen' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z552x70jfj7dn127ziow0rn6zen'>
+            <column datatype='string' name='[Vehicle]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle]' derivation='None' name='[none:Vehicle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[trip_distance]' derivation='Sum' name='[sum:trip_distance:qk]' pivot='key' type='quantitative' />
+            <column caption='Trip Distance' datatype='real' name='[trip_distance]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]' />
+              <color column='[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]' />
+              <text column='[federated.0z552x70jfj7dn127ziow0rn6zen].[none:Vehicle:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FA8AE846-5A12-4CA9-9219-8D59C0A91BC2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z552x70jfj7dn127ziow0rn6zen].[:Measure Names]</field>
+            <field>[federated.0z552x70jfj7dn127ziow0rn6zen].[none:Trip ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{49A52E1A-C030-4FCA-A0E5-5B62D3E64AF0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z552x70jfj7dn127ziow0rn6zen].[sum:trip_distance:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BE206F78-C38C-4430-AB78-920035B7B72A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='107' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAHSElEQVR4nO3a3U9U6QHH8d+cMzCvMAMDAyiCw6tSFc3uVjfazabdpEkv2rsm/WN60ev+
+      E/0T2rveuE3T1LrbVUERRQRZBRUFhheZFxhmerFpolXamu0sbX/fz93JPHnOc07mO3PmyUQa
+      jUZDgKngqBcAHCUCgLXo6wfl6r4ePV0/qrUAb+nv61BN9abN/0YAC8sv9Ytf/qZpJwPe169/
+      9XMV69Wmzc8jEKwRAKxFD3thotCre0urGhvIq1Y70MLK2ltjwiDQ+GBe27sV7ZarKu6Um7pY
+      +NpYXVUQBNrd3lYy3SZFpI58/p1jVx8/0eO5OcUSCbV3dmpgfExBGL4xZvnhQ/WPjBweQC6T
+      UiQi5dqTyrYlNXqiW7cfPtXYQF6br8rKpOJa29pVrCWqvq6Mrv517j97xcBrKqWSgiDUTnFT
+      kUig+akpZbu71dbRoZcrK+ofGdHS7D1NfnJF5d1dxRIJVUolNeoNVQfKun/jppLptGr7NTUa
+      dYXRqB7cmjr8ESiIRBQGgRqSVje2NbP4TB+cHlA6GVOj0VB1r6a7i8/U2hIqEvlmPNAs0ZYW
+      7e9VVT84UBCGGrtwQfV6XQt37ija0qK9SkUnJ04rnckoiETUMzCgIAhVrx9op7ipaqmk5YcL
+      qu3va+Li97W9sfHNt8phJ1x+sanL54Z0b+m56vWGBvs6dfXL+3pVqmq3XNWTF0VFw0DP17c1
+      Nbes9nT8u7wfMNN17JjWnz2XJLXnOrWyuKiuvj6d/uhDBWGoTC6n9lynJCmVzWh5fl7pbLt6
+      BweVSKfUmkiof2RYnT153f/qhgoTExq7cF6R1/8KMbPwlG1Q/FdhGxRoIgKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKAtejrB2EYKJOOH9VagLf0pBLqCGJNmz/SaDQa
+      fz/YqlZ0/dlK004GvK+edEzr1d2mzf/GN0CtXtdapdy0kwHvqzvVvE9/id8AMBc97IWdYlHp
+      bFavNrcUhIFS7e2HTrK7va3lhwsanTynIAzfOebF8rJaWlvVkc9/+1XDzrPHTxQEobY2NtSW
+      zSoSkXpP9L9z7NZGUdPXvlCyrU0XrlxSeMh7UvonASxM39HZH1zWo7t3VSmV1JbNavT8pOan
+      b6tn4ITqtQNVyiX1FQqauXZdZz6+pEqppIXbd1Q48z0VV1e1vVFUEIbK9fbqT7/9na787Kea
+      +ct1HR8aUr1+oK31Dd358zV9+NkPdXx4+NvfJfzfqu3XFIR1VSsVxff2NHtjSsn0XcUTCa0s
+      fa1T589p8f6cPvnJj7V4b06Tly/qwfSMFmfv68nCkrJdnVpeXFLh1Kgezy8q2hJVOpP59x6B
+      EqmUMrmcvrr6udZWVvTg5i3NT02r+/hx1fb2lM5mlMq069HdWQ2fO6v5W1PaeL6q+sGB8if6
+      tfnypYYnz2lrbU0D42Namr2n+alp9RVOavDUOG9+/EvxZEI7xS1VdsuKtkQ18cF5RaNRvXz2
+      XOOTZ9Qai+n8xxfVls0omU5re2NTQRhqf29fH316RZtr6xo6Pa4wGlUQhhocG1W6ve3wABpq
+      6MbVz5XJ5VTa2dGj2VkdKxQUBKGOFQrK9fUqlkioNRZTeeeVbv7hj4qnUpq5dl3xVErxdFqt
+      8bhiiYTCaKgwCJXt7tbsF18qiIbq7OlRIpVSbX9fKwsL3+W9xP+grt4e1et1dfZ0K5fPa3X5
+      qcYmz+jSZ5+qvFtSvr9PHd1dkqTRsxPa2dxSIpVU/9BJxZNJXfzRp6qUSjoxXFBhfFStsVYN
+      jAy9uQ26Xi7p918vHtlFAv/odC6r4l7ztkHZBYI1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoC16OsHLWGoY6n0Ua0FeEumNa4g0rz5/wZ0KcnT6EIiVQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
